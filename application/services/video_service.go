@@ -132,3 +132,13 @@ func printOutput(out []byte) {
 		log.Printf("=====> Output: %s\n", string(out))
 	}
 }
+
+func (v *VideoService) InsertVideo() error {
+	_, err := v.VideoRepository.Insert(v.Video)
+
+	if err != nil {
+		return err
+	}
+
+	return nil
+}

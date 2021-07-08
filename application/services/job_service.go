@@ -61,6 +61,11 @@ func (j *JobService) Start() error {
 		return j.failJob(err)
 	}
 
+	err = j.changeJobStatus("COMPLETED")
+	if err != nil {
+		return j.failJob(err)
+	}
+
 	return nil
 }
 
