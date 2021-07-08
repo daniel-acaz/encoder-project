@@ -11,6 +11,6 @@ require (
 	github.com/lib/pq v1.1.1
 	github.com/mattn/go-sqlite3 v1.14.5 // indirect
 	github.com/satori/go.uuid v1.2.0
+	github.com/streadway/amqp v1.0.1-0.20200716223359-e6b33f460591
 	github.com/stretchr/testify v1.7.0
-	golang.org/x/oauth2 v0.0.0-20210615190721-d04028783cf1
 )
